@@ -18,6 +18,18 @@ export default [
       "*.config.mjs",
     ],
   },
+  // Recognize browser globals for all files
+  {
+    languageOptions: {
+      globals: {
+        document: "readonly",
+        localStorage: "readonly",
+        setTimeout: "readonly",
+        fetch: "readonly",
+        confirm: "readonly",
+      },
+    },
+  },
   {
     files: ["**/*.ts", "**/*.tsx"],
     languageOptions: {
@@ -31,15 +43,6 @@ export default [
     },
     rules: {
       // Your custom rules here
-    },
-  },
-  {
-    languageOptions: {
-      globals: {
-        document: "readonly",
-        localStorage: "readonly",
-        setTimeout: "readonly",
-      },
     },
   },
 ];
