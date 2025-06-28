@@ -37,6 +37,8 @@ export default [
     languageOptions: {
       globals: {
         document: "readonly",
+        localStorage: "readonly",
+        setTimeout: "readonly",
       },
     },
   },
