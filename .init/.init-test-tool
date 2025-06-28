@@ -1,0 +1,4 @@
+{
+    "command": "npm run build",
+    "working_directory": "/home/kavia/workspace/code-generation/browsertodo-94432-36477ab6/frontend_app"
+}
